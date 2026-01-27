@@ -8,10 +8,12 @@ function setup() {
 }
 
 function draw() {
+background(220,220,220,20);
   mouseSpeed = dist(mouseX, mouseY, prevMouseX, prevMouseY);
 
   let circleSize = map(mouseSpeed, 0, 50, 10, 100);
 
+  noStroke();
   fill(100, 150, 255);
   circle(mouseX, mouseY, circleSize);
 
